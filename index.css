@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;        /* öğelere esneklik vermeye başlamak için */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;    /* Yukarıdan boşluk bırakıyor */
+    background: #070224;
+}
+
+.place {
+    height: 700px;
+    width: 700px;
+    background: #f8f8f8;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.cards, .card {  /* Aradaki virgül ikisine de aynı anda etki etmesi için */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% / 4);
+    width: calc(100% / 4);
+}
+
+.cards {
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;  /* Varsayılan öğeler tek bir satıra sığmaya çalışır. Bu özellilk birden fazla satıra yaymak için kullanılır */
+}
+
+img {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 5px;
+    width: 150px;
+}
+
+.card .front-side {
+    display: none;
+}
+
+.card .back-side {
+    display: block;
+}
+
+.skorTable {
+    height: 700px;
+    width: 200px;
+    background: #f8f8f8;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+.countArea {
+    background-color: #070224;
+    color: white;
+    padding: 15px 32px;
+    text-align: center; 
+    font-size: 16px;
+    margin: 40px 50px;
+    border-radius: 30px;
+}
+
+.scoreArea {
+    text-align: center; 
+    font-size: 25px;
+}
+
+.textArea {
+    text-align: center; 
+    font-size: 25px;
+}
+
+.button {
+  background-color: #070224;
+  border-radius: 30px;
+  color: #ffffff;
+  padding: 10px 15px;
+  margin: 400px 59px;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+@media screen and (max-width: 480px){
+    img {
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        padding: 5px;
+        width: 70px;
+    }
+
+    .place {
+        height: 350px;
+        width: 400px;
+        background: #f8f8f8;
+        border-radius: 50px;
+        padding: 10px;
+    }
+  
+    .skorTable {
+        height: 350px;
+        width: 50px;
+        background: #f8f8f8;
+        border-radius: 50px;
+        margin: 10px;
+    }
+
+    .countArea {
+        background-color: #070224;
+        color: white;
+        padding: 2px 5px;
+        text-align: center; 
+        font-size: 14px;
+        margin: 20px 1px;
+        border-radius: 10px;
+    }
+
+    .scoreArea {
+        text-align: center; 
+        font-size: 10px;
+    }
+    
+    .textArea {
+        text-align: center; 
+        font-size: 10px;
+    }
+
+    .button {
+        background-color: #070224;
+        border-radius: 10px;
+        color: #ffffff;
+        padding: 2px 5px;
+        margin: 180px 2px;
+        text-align: center;
+        font-size: 10px;
+      }
+}
