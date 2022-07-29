@@ -67,8 +67,8 @@ function checkCards() {
 
 function flipBack(cardOne, cardTwo) {
   if (cardOne.querySelector("img").src == cardTwo.querySelector("img").src) {
-    checkDisplayBlock(cardOne);
-    checkDisplayBlock(cardTwo);
+    setDisplayBlock(cardOne);
+    setDisplayBlock(cardTwo);
   } else {
     setDisplayNone(cardOne);
     setDisplayNone(cardTwo);
