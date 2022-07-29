@@ -82,9 +82,14 @@ img {
   border-radius: 30px;
   color: #ffffff;
   padding: 10px 15px;
-  margin: 400px 59px;
+  margin: 330px 59px;
   text-align: center;
   font-size: 15px;
+}
+
+.infoArea {
+    text-align: center; 
+    font-size: 15px;
 }
 
 
@@ -137,8 +142,13 @@ img {
         border-radius: 10px;
         color: #ffffff;
         padding: 2px 5px;
-        margin: 180px 2px;
+        margin: 115px 2px;
         text-align: center;
         font-size: 10px;
       }
+
+    .infoArea {
+        text-align: center; 
+        font-size: 7px;
+    }
 }
